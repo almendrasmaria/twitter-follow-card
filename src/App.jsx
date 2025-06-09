@@ -1,9 +1,10 @@
+import TwitterFollowCard from './TwitterFollowCard'
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Twitter Follow Card</h1>
+      <TwitterFollowCard />
     </>
   )
 }
