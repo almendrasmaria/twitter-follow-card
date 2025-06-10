@@ -1,10 +1,44 @@
-
 .button-follow-card {
   background-color: white;
-  color: black;
+  color: black ;
+  border: 1px solid white;
+  font-weight: bold;
+  padding: 6px 18px;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
 }
 
 .button-following-card {
   background-color: black;
   color: white;
+  border: 1px solid white;
+  font-weight: bold; 
+  padding: 6px 30px;
+  border-radius: 100px; 
+  cursor: pointer;
+  position: relative;
 } 
+
+.button-unfollow-card {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-following-card:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: red;
+  color: transparent;
+}
+
+.button-following-card:hover .button-unfollow-card{
+  display: flex;
+  color: red; 
+}
