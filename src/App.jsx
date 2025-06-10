@@ -28,6 +28,15 @@ function App() {
   return (
     <>
       <TwitterFollowCard />
+      <ul>
+        {users.map((user, index) => {
+          return (
+            <li key={index}>
+              {user.userName} - {user.name} - {user.isFollowing ? "Sí" : "No"}
+            </li>
+          );
+        })}
+      </ul>
     </>
   );
 }
