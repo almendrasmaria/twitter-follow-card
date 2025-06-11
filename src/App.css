@@ -1,6 +1,6 @@
 .button-follow-card {
   background-color: white;
-  color: black ;
+  color: black;
   border: 1px solid white;
   font-weight: bold;
   padding: 6px 18px;
@@ -13,12 +13,12 @@
   background-color: black;
   color: white;
   border: 1px solid white;
-  font-weight: bold; 
+  font-weight: bold;
   padding: 6px 30px;
-  border-radius: 100px; 
+  border-radius: 100px;
   cursor: pointer;
   position: relative;
-} 
+}
 
 .button-unfollow-card {
   display: none;
@@ -38,7 +38,13 @@
   color: transparent;
 }
 
-.button-following-card:hover .button-unfollow-card{
+.button-following-card:hover .button-unfollow-card {
   display: flex;
-  color: red; 
+  color: red;
+}
+
+.avatar-twitter {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
 }

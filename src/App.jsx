@@ -1,28 +1,6 @@
 import TwitterFollowCard from "./TwitterFollowCard";
+import { users } from "./data/users.js";
 import "./App.css";
-
-const users = [
-  {
-    userName: "ngarcia",
-    name: "Nahuel Garcia",
-    isFollowing: true,
-  },
-  {
-    userName: "malmendras",
-    name: "María Almendras",
-    isFollowing: false,
-  },
-  {
-    userName: "tecmac",
-    name: "Cristhian Maco",
-    isFollowing: false,
-  },
-  {
-    userName: "jluque",
-    name: "Josue Luque",
-    isFollowing: false,
-  },
-];
 
 function App() {
   return (
@@ -32,7 +10,8 @@ function App() {
         {users.map((user, index) => {
           return (
             <li key={index}>
-              {user.userName} - {user.name} - {user.isFollowing ? "Sí" : "No"}
+              <img className="avatar-twitter" src={`https://unavatar.io/${user.userName}`} />
+              @{user.userName} - {user.name} - {user.isFollowing ? "Sí" : "No"}
             </li>
           );
         })}
