@@ -4,17 +4,21 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <ul>
-        {users.map((user, index) => {
+    <section>
+      {
+        users.map(({ userName, name, isFollowing }) => {
           return (
-            <li key={index}>
-              <TwitterFollowCard userName={user.userName} initialFollowing={user.isFollowing}>{user.name}</TwitterFollowCard> 
-            </li>
+            <TwitterFollowCard
+              key={userName}
+              userName={userName}
+              initialFollowing={isFollowing}
+            >
+              {name}
+            </TwitterFollowCard>
           );
-        })}
-      </ul>
-    </>
+        })
+      }
+    </section>
   );
 }
 
