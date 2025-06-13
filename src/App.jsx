@@ -4,7 +4,8 @@ import "./App.css";
 
 function App() {
   return (
-    <section>
+    <section className="twitter-container">
+      <h2>A quién seguir</h2>
       {
         users.map(({ userName, name, isFollowing }) => {
           return (

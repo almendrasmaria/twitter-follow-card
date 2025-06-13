@@ -1,3 +1,34 @@
+.twitter-container {
+  border: 1px solid white; 
+  border-radius: 16px; 
+  padding: 1px 20px;
+  width: 350px;
+}
+
+.twitter-card {
+  display: flex;
+  align-items: center; 
+  margin-bottom: 16px;
+}
+
+.twitter-info {
+  flex: 1;
+  margin-left: 12px; 
+  margin-right: 12px;
+  flex-direction: column;
+  display: flex;
+}
+
+.twitter-info strong {
+  font-size: 14px;
+  color: white;
+}
+
+.twitter-username {
+  font-size: 14px;
+  color: gray;
+}
+
 .button-follow-card {
   background-color: white;
   color: black;
