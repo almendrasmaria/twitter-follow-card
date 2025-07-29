@@ -38,6 +38,7 @@
   border-radius: 100px;
   cursor: pointer;
   position: relative;
+  user-select: none;
 }
 
 .button-following-card {
@@ -49,6 +50,7 @@
   border-radius: 100px;
   cursor: pointer;
   position: relative;
+  user-select: none;
 }
 
 .button-unfollow-card {
