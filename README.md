@@ -2,6 +2,8 @@
 Proyecto inspirado en la sección “A quién seguir” de Twitter.
 Cada tarjeta muestra un usuario con su avatar, nombre y un botón dinámico para seguir o dejar de seguir.
 
+![Twitter Follow Card](https://github.com/almendrasmaria/twitter-follow-card/blob/main/src/assets/tw.gif)
+
 ## 📚 Conocimientos aplicados
 - Hook useState para manejar el estado de seguimiento.
 - Props y Children para pasar datos dinámicos.
